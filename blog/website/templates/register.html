@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<form method="POST">
+    <br>
+    <h1 align="center" style="color:#ffffff"> REGISTER</h1>
+    <div class="form-group">
+        <fieldset>
+            <label for="firstname" style="color:#ffffff"> first name:</label>
+            <input type="text" name="firstname" id="firstname" class="form-control" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="lastname" style="color:#ffffff"> last name:</label>
+            <input type="text" name="lastname" id="lastname" class="form-control" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="email" style="color:#ffffff"> email:</label>
+            <input type="text" name="email" id="email" class="form-control" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="password1" style="color:#ffffff"> password:</label>
+            <input type="password" name="password1" id="password1" class="form-control" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="password2" style="color:#ffffff"> confirm password:</label>
+            <input type="password" name="password2" id="password2" class="form-control" required>
+        </fieldset>
+        <br>
+        <fieldset align="center"> 
+            <button type="submit" id="button" class="btn btn-lg btn-primary" style="background-color: #052c74">SUBMIT</button>
+        </fieldset>
+    </div>
+</form>
+{% endblock %}

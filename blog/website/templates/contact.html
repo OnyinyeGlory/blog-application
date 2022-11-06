@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %} 
+<form method="POST">
+    <br>
+    <h1 align="center" style="color:#ffffff"> CONTACT US</h1>
+
+    <div class="form-group">
+            <fieldset>
+                <input class="form-control" placeholder="name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <br>
+            <fieldset>
+                <input class="form-control" placeholder="email" type="email" tabindex="2" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <textarea placeholder="message..." tabindex="3" rows="5" cols="58" maxlength="1500" required></textarea>
+            </fieldset>
+            <br>
+            <fieldset align="center">
+                <select>
+                    <option value="">...select priority...</option>
+                    <option value="Feedback">feedback</option>
+                    <option value="Request">request</option>
+                    <option value="Complaint">complaint</option>
+                </select>
+            </fieldset>
+            <br>
+            <div align="center">
+                <a><button type="submit" class="btn btn-lg btn-outline-primary " style="background-color: #052c74"><h4 class="nav-item nav-link text-white h4">SEND</h4></button></a>
+            
+                <a href="/home"><button align="right" type="button" class="btn  btn-primary">BACK</button></a>
+              </div>
+    </div>
+</form>
+{% endblock %}
